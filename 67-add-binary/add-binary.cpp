@@ -1,7 +1,7 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
-     string result = "";
+    string result = "";
     int i = a.size() - 1;
     int j = b.size() - 1;
     int carry = 0;
