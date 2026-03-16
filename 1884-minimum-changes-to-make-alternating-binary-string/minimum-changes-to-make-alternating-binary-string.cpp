@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int minOperations(string s) {
+        int n = s.size();
+        int count = 0;
+
+        for(int i = 0; i < n; i++) {
+            if(s[i] != (i % 2 + '0')) {
+                count++;
+            }
+        }
+
+        return min(count, n - count);
+    }
+};
